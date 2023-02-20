@@ -1,0 +1,172 @@
+$main-color: #2bd1d1;
+$gray: #959398;
+$dark-blue: #3a3053;
+$main-black: #35323d;
+html{
+    font-family: "Poppins";
+    font-weight: 500;
+    color: $main-black;
+}
+
+button{
+    font-family: "Poppins";
+}
+
+input{
+    border: 1px black solid;
+    text-align: start;
+    padding: 1.1rem 0rem;
+    width: 100%;
+}
+
+span {
+    display: block;
+    // overflow: hidden;
+    width: 100%;
+}
+
+::placeholder{
+    color: $gray;
+    font-family: "Poppins";
+    font-weight: 600;
+    
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.font-size-3{
+    font-size: 1rem;
+}
+.font-size-2{
+    font-size: 1.3rem;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-viewport{
+    width: 135vw;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.base {
+    font-weight: 500;
+  }
+  
+.semi-bold{
+font-weight: 600;
+}
+  
+
+.bold{
+    font-weight: 700;
+}
+
+.extra-bold{
+    font-weight: 800;
+}
+
+.padding-2{
+    padding: 1rem;
+}
+
+.padding-3{
+    padding: 1.3rem;
+}
+
+.margin-0{
+    margin: 0;
+}
+
+.margin-top-3{
+    margin: 1rem;
+}
+
+.letter-spacing-1{
+    letter-spacing: -2px;
+}
+
+.line-height-1{
+    line-height: 2.8rem;
+}
+
+.letter-spacing-2{
+    letter-spacing: 1px;
+}
+
+.padding-y-1{
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+}
+
+.padding-x-3{
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+.padding-x-2{
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.pill{
+    border: 0;
+    border-radius: 1000px;
+}
+
+.rounded{
+    border: 0;
+    border-radius: .5em;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.background-main-color{
+    background-color: $main-color;
+}
+
+.text-white{
+    color: #ffffff;
+}
+
+.gray{
+    color: $gray;
+}
+
+.shorten-link-background{
+    background-image: url("./assets/images/bg-shorten-mobile.svg");
+    background-color: $dark-blue;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: right -50%;
+    background-size: 76%;
+}
+
+.gap-1{
+    gap: 1em; 
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+h4{
+font-size: 1rem;
+}
