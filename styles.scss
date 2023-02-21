@@ -2,10 +2,19 @@ $main-color: #2bd1d1;
 $gray: #959398;
 $dark-blue: #3a3053;
 $main-black: #35323d;
+$baby-blue: #f0f1f6;
+$sec-black: #232027;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     font-family: "Poppins";
     font-weight: 500;
     color: $main-black;
+    overflow-x: hidden;
 }
 
 button{
@@ -21,7 +30,6 @@ input{
 
 span {
     display: block;
-    // overflow: hidden;
     width: 100%;
 }
 
@@ -38,15 +46,27 @@ span {
     align-items: center;
 }
 
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .flex-column{
     flex-direction: column;
 }
 
-.font-size-3{
-    font-size: 1rem;
+.font-size-1{
+    font-size: .85rem;
 }
+
 .font-size-2{
     font-size: 1.3rem;
+}
+
+.font-size-3{
+    font-size: 1rem;
 }
 
 .flex-center{
@@ -56,12 +76,16 @@ span {
 }
 
 .full-viewport{
-    width: 135vw;
-    overflow: hidden;
+    width: 150vw;
+    overflow:hidden;
 }
 
 .text-center{
     text-align: center;
+}
+
+.thin{
+    font-weight: 300;
 }
 
 .base {
@@ -142,10 +166,17 @@ font-weight: 600;
     background-color: $main-color;
 }
 
+.bg-dark-blue{
+    background-color: $dark-blue;
+}
+
 .text-white{
     color: #ffffff;
 }
 
+.bg-white{
+    background-color: #ffffff;
+}
 .gray{
     color: $gray;
 }
@@ -155,12 +186,76 @@ font-weight: 600;
     background-color: $dark-blue;
     background-repeat: no-repeat;
     background-attachment: inherit;
-    background-position: right -50%;
+    background-position: right top;
     background-size: 76%;
+}
+
+.boost-background{
+    background-image: url("./assets/images/bg-boost-mobile.svg");
+    background-color: $dark-blue;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: top left;
+    background-size: 100%;
 }
 
 .gap-1{
     gap: 1em; 
+}
+
+.bg-baby-blue{
+    background-color: $baby-blue;
+}
+
+.bg-sec-black{
+    background-color: $sec-black;
+}
+.attribution{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        font-weight: 500;
+        color: #ffffff;
+        :hover{
+            color: $main-color;
+            transition-duration: .3s;
+        }
+    }
+}
+
+.main-color{
+    color: $main-color;
+}
+
+.main-line{
+    width: .6rem;
+    height: 80%;
+    position: absolute;
+    background-color: $main-color;
+    z-index: 1;
+    top: 0;
+    align-items: center;
+}
+
+.z-index-1{
+    z-index: 2;
+    position: relative;
+}
+
+.position-relative{
+    position: relative;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
 }
 
 h1 {
@@ -169,4 +264,8 @@ font-size: 2.5rem;
 
 h4{
 font-size: 1rem;
+}
+
+h5{
+    font-size: .9rem;
 }
