@@ -15,12 +15,12 @@
 
 <body>
 
-  <section>
+  <header>
 
     <div class="container">
       <nav class="nav-container">
         <div class="nav-left">
-          <img src="./assets/images/logo.svg" alt="Shortly Logo">
+          <img id="logo" src="./assets/images/logo.svg" alt="Shortly Logo">
           <ul>
             <li>
               Features
@@ -32,8 +32,8 @@
               Resources
             </li>
           </ul>
-          <!-- <img src="./assets/images/menu-burger-horizontal-svgrepo-com.svg"
-          width="30" alt="Burger menu"> -->
+          <img id="burger-menu" src="./assets/images/menu-burger-horizontal-svgrepo-com.svg"
+          width="30" alt="Burger menu">
         </div>
         <div class="nav-right">
           <ul>
@@ -71,18 +71,19 @@
     </div> -->
       </nav>
     </div>
+  </header>
 
 
+  <section class="hero-area-section">
     <div class="container">
       <div class="hero-area-container">
-
         <div class="text-container">
           <h1>More than just shorter links</h1>
           <h4>Build your brand’s recognition and get detailed insights on how
             your
             links are performing.
           </h4>
-          <div>
+          <div class="button-wrapper">
             <button>Get Started</button>
           </div>
         </div>
@@ -91,10 +92,9 @@
             alt="Main Illustration">
         </div>
       </div>
-
     </div>
-
   </section>
+
 
 
 
@@ -104,7 +104,7 @@
     <div class="white-rectangle"></div>
     <div class="container">
 
-      <div class="shorten-link-container shorten-link-background">
+      <div class="shorten-link-container shorten-link-background shorten-link-background-mobile">
         <div class="elements-parent">
           <span><input type="text"
               placeholder="Shorten a link here..."></span>
@@ -207,7 +207,7 @@
 
 <section>
 
-  <div class="boost-area boost-background">
+  <div class="boost-area boost-background boost-background-mobile">
     <h2>Boost your links today</h3>
       <button class="get-started-button">
         Get
@@ -292,23 +292,12 @@
   </div>
 
 
-  <div class="attribution flex-center bg-sec-black">
-    <div style="margin-bottom: 1rem">
-      <h4 class="thin margin-0">
-        Challenge by
+  <div class="attribution">
+      <h4>
+        Developed by<a href="https://www.frontendmentor.io/profile/HusseinSamy"
+          target="_blank"> Hussein
+        </a>
       </h4>
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-        <h5 class="margin-0 base">Frontend Mentor</h5>
-      </a>
-    </div>
-    <div style="margin-bottom: 3rem">
-      <h4 class="thin margin-0">
-        Coded by
-      </h4>
-      <a href="https://www.frontendmentor.io/profile/HusseinSamy"
-        target="_blank">
-        <h5 class="margin-0 base">Hussein</h5>
-      </a>
     </div>
   </div>
 </div>
