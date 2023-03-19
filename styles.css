@@ -18,10 +18,33 @@ button {
   font-family: "Poppins";
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: #9be3e2 !important;
+  transition-duration: 0.3s;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #2bd1d1 !important;
+  transition-duration: 0.3s;
+}
+
+nav li:hover {
+  cursor: pointer;
+  color: #35323d !important;
+  transition-duration: 0.3s;
+}
+
+path:hover {
+  cursor: pointer;
+  fill: #2bd1d1;
+  transition-duration: 0.3s;
+}
+
 input {
   text-align: start;
-  padding: 1.3rem 0rem;
-  padding-left: 2.1rem;
+  padding: 1.3rem 1.8rem;
   width: 95%;
   font-weight: 300;
   font-size: 1.25rem;
@@ -35,17 +58,17 @@ span {
 ::-moz-placeholder {
   color: #959398;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 500;
 }
 
 ::placeholder {
   color: #959398;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 1110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,6 +83,7 @@ span {
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-position: right top;
+  background-size: 100%;
 }
 
 .boost-background {
@@ -67,7 +91,7 @@ span {
   background-color: #3a3053;
   background-repeat: no-repeat;
   background-attachment: inherit;
-  background-position: top 10%;
+  background-position: right top;
 }
 
 .shorten-link-background-mobile {
@@ -166,7 +190,6 @@ h5 {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding-left: 0.6rem;
 }
 .nav-left ul {
   display: flex;
@@ -180,10 +203,6 @@ h5 {
   font-weight: 600;
   font-size: 1rem;
 }
-.nav-left img {
-  padding-left: 0.3rem;
-}
-
 .nav-right {
   display: flex;
   justify-content: space-between;
@@ -222,7 +241,6 @@ h5 {
 }
 .hero-area-container .text-container h1 {
   margin-top: 1.4rem;
-  margin-left: 1rem;
   margin-bottom: 0.1rem;
   font-weight: 700;
   font-size: 4.8rem;
@@ -236,7 +254,6 @@ h5 {
   line-height: 2.1rem;
   letter-spacing: 0.6px;
   font-weight: 500;
-  margin-left: 1rem;
   color: #959398;
 }
 .hero-area-container .image-container {
@@ -248,7 +265,6 @@ h5 {
   background-color: #2bd1d1;
   padding: 0.9rem 2.5rem;
   letter-spacing: 0.2px;
-  margin-left: 1rem;
   border: 0;
   border-radius: 30px;
   color: white;
@@ -258,12 +274,12 @@ h5 {
 
 .shorten-link-container {
   margin-top: 3.7rem;
-  margin-left: 1.4rem;
   z-index: 9;
   width: 100%;
   padding: 2rem 0rem;
   border: 0;
   border-radius: 10px;
+  display: flex;
 }
 
 .section-2 {
@@ -280,22 +296,32 @@ h5 {
 }
 
 .elements-parent {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 1.3rem 4rem;
+  gap: 2rem;
+  padding: 1.3rem 2rem;
 }
 .elements-parent span {
-  width: 78.5%;
+  width: 73%;
+  position: relative;
 }
 .elements-parent span input {
   border: 0;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.elements-parent span i {
+  position: absolute;
+  top: 4.4rem;
+  color: hsl(0deg, 87%, 67%);
+  display: none;
 }
 .elements-parent button {
   background-color: #2bd1d1;
-  padding: 1.1rem 2.7rem;
+  padding: 1.1rem 2.5rem;
   letter-spacing: 0.2px;
   margin-left: -0.3rem;
   border: 0;
@@ -303,6 +329,79 @@ h5 {
   color: white;
   font-size: 1.2rem;
   font-weight: 700;
+  width: 18%;
+}
+
+.invalid-input {
+  border: hsl(0deg, 87%, 67%) solid 2px !important;
+}
+
+.invalid-input::-moz-placeholder {
+  color: hsl(0deg, 87%, 67%);
+  opacity: 60%;
+}
+
+.invalid-input::placeholder {
+  color: hsl(0deg, 87%, 67%);
+  opacity: 60%;
+}
+
+#section-2 > .shortened-link-container {
+  margin-top: 1.5rem;
+}
+
+#section-2 > .shortened-link-container ~ .shortened-link-container {
+  margin-top: 0.6rem;
+}
+
+.shortened-link-container {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.23rem;
+  font-weight: 600;
+}
+.shortened-link-container p {
+  margin: 1.4rem 0rem;
+}
+
+.shortened-left {
+  padding-left: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.shortened-right {
+  padding-right: 2rem;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shortened-right p {
+  color: #2bd1d1;
+}
+.shortened-right button {
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #2bd1d1;
+  padding: 0.5rem 0rem;
+  width: 6.5rem;
+  border: 0;
+}
+
+.copied-link {
+  background-color: #35323d !important;
+}
+
+.copied-link:hover {
+  background-color: #959398 !important;
 }
 
 .features-section {
@@ -319,16 +418,12 @@ h5 {
   font-size: 2.41rem;
   font-weight: 700;
   margin: 0;
-  padding-left: 1.2rem;
 }
 .features-section h4 {
-  padding-left: 1.7rem;
   width: 45ch;
   font-weight: 500;
   color: #959398;
   margin: 0;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   font-size: 1.12rem;
   line-height: 2rem;
 }
@@ -338,7 +433,6 @@ h5 {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding-left: 0.9rem;
   z-index: 9;
 }
 
@@ -460,11 +554,10 @@ footer .footer-container {
   width: 100%;
 }
 footer .footer-container .image-container {
-  width: 45%;
+  width: 41%;
 }
 footer .footer-container .image-container img {
   margin-bottom: 6rem;
-  margin-left: 0.3rem;
 }
 footer .footer-column {
   display: flex;
@@ -513,10 +606,49 @@ footer #footer-column-2 h5 {
 
 #burger-menu {
   display: none;
+  cursor: pointer;
+}
+
+.toggle-display {
+  display: flex !important;
+}
+
+.menu-container {
+  background-color: #3a3053;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  position: fixed;
+  width: 90%;
+  z-index: 10;
+  margin-top: 27rem;
+}
+.menu-container ul {
+  width: 100%;
+}
+.menu-container ul li {
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  padding: 1rem 0rem;
+}
+.menu-container button {
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 1000px;
+  color: white;
+  background-color: #2bd1d1;
+  padding: 0.6rem 7rem;
+  margin-bottom: 2rem;
+  border: 0;
 }
 
 @media only screen and (max-width: 1120px) {
-  h1, h4, h5 {
+  h1,
+  h4,
+  h5 {
     padding: 0;
     margin: 0;
   }
@@ -528,7 +660,7 @@ footer #footer-column-2 h5 {
     display: none;
   }
   .nav-left #logo {
-    padding-left: 0.9rem;
+    padding-left: 1.5rem;
   }
   .nav-left #burger-menu {
     display: flex;
@@ -602,6 +734,7 @@ footer #footer-column-2 h5 {
     width: 100%;
     flex-direction: column;
     padding: 0;
+    gap: 1rem;
   }
   .elements-parent span {
     width: 100%;
@@ -655,6 +788,34 @@ footer #footer-column-2 h5 {
     display: flex;
     background-size: 73%;
   }
+  .shortened-link-container {
+    width: 75vw;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .shortened-link-container p {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .shortened-link-container .shortened-left {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .shortened-link-container .shortened-right {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .shortened-link-container .shortened-right p {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .shortened-link-container .shortened-right button {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
   .features-container {
     margin-top: 4rem;
     padding-left: 0rem;
@@ -673,10 +834,14 @@ footer #footer-column-2 h5 {
     width: 80%;
     padding: 0;
   }
-  #feature-1, #feature-2, #feature-3 {
+  #feature-1,
+  #feature-2,
+  #feature-3 {
     margin-bottom: 0rem;
   }
-  #feature-1 .img-container, #feature-2 .img-container, #feature-3 .img-container {
+  #feature-1 .img-container,
+  #feature-2 .img-container,
+  #feature-3 .img-container {
     left: 7.5rem;
     top: -2.5rem;
   }
@@ -699,8 +864,8 @@ footer #footer-column-2 h5 {
     padding-bottom: 5.2rem;
   }
   .boost-area {
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
     width: unset;
   }
   .boost-area h2 {
@@ -709,6 +874,7 @@ footer #footer-column-2 h5 {
   }
   .boost-area button {
     padding: 1rem 4rem;
+    margin-top: 0;
   }
   footer .footer-container .image-container img {
     margin: 3.5rem auto 0rem auto;
