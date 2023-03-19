@@ -204,9 +204,9 @@ h5 {
   margin-top: 1.4rem;
   margin-bottom: 0.1rem;
   font-weight: 700;
-  font-size: 4.8rem;
+  font-size: 4.9rem;
   line-height: 5.5rem;
-  letter-spacing: -0.6px;
+  letter-spacing: -1.2px;
 }
 .hero-area-container .text-container h4 {
   font-size: 1.3rem;
@@ -218,7 +218,7 @@ h5 {
   color: #959398;
 }
 .hero-area-container .image-container {
-  width: 39.5%;
+  width: 40%;
   margin-top: 1.6rem;
 }
 .hero-area-container button {
@@ -492,11 +492,14 @@ h5 {
 }
 
 #feature-1 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   height: 265px;
 }
+#feature-1 h3 {
+  margin-top: 4.2rem;
+}
 #feature-1 .img-container {
-  top: -2.5rem;
+  top: -3rem;
 }
 
 #feature-2 {
@@ -570,10 +573,10 @@ footer .footer-container {
   width: 100%;
 }
 footer .footer-container .image-container {
-  width: 41%;
+  width: 42%;
 }
 footer .footer-container .image-container img {
-  margin-bottom: 6rem;
+  margin-bottom: 6.5rem;
 }
 footer .footer-column {
   display: flex;
@@ -581,7 +584,7 @@ footer .footer-column {
   align-items: center;
   flex-direction: column;
   margin-bottom: 1.5rem;
-  width: 20%;
+  width: 21%;
   margin-top: 4.5rem;
 }
 footer .footer-column h5 {
@@ -597,14 +600,15 @@ footer .footer-column ul {
   width: 100%;
   text-align: start;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 footer .footer-column ul li {
   color: #959398;
   font-weight: 500;
   font-size: 1rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.9px;
 }
 footer .social-icons {
   display: flex;
@@ -670,11 +674,6 @@ footer #footer-column-2 h5 {
     flex-direction: column;
     overflow: hidden;
   }
-  .hero-area-container .image-container {
-    order: 1;
-    justify-content: center;
-    align-items: center;
-  }
   .hero-area-container .text-container {
     order: 2;
   }
@@ -703,10 +702,13 @@ footer #footer-column-2 h5 {
   }
   .hero-area-container .image-container {
     margin-top: 0;
-    width: 100%;
     overflow: hidden;
     position: relative;
     left: 1.5rem;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    width: 98.5%;
   }
   .hero-area-container .image-container img {
     width: 130vw;
@@ -895,7 +897,6 @@ footer #footer-column-2 h5 {
   }
   footer .social-icons {
     width: 45%;
-    margin-top: 1rem;
   }
   footer #footer-column-1 h5 {
     margin-top: 3rem;
