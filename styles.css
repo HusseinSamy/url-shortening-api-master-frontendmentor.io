@@ -146,6 +146,11 @@ h5 {
   align-items: center;
   width: 100%;
 }
+.nav-left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .nav-left ul {
   display: flex;
   justify-content: space-between;
@@ -718,6 +723,41 @@ footer #footer-column-2 h5 {
     margin: 5.5rem 4rem 0rem 4rem;
     width: 75vw;
   }
+  .shorten-link-background-mobile {
+    display: flex;
+    background-size: 73%;
+  }
+  .shortened-link-container {
+    width: 75vw;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .shortened-link-container p {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .shortened-link-container .shortened-left {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .shortened-link-container .shortened-right {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .shortened-link-container .shortened-right p {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .shortened-link-container .shortened-right button {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .section-2 {
+    padding-bottom: 5.2rem;
+  }
   .elements-parent {
     width: 100%;
     flex-direction: column;
@@ -766,44 +806,6 @@ footer #footer-column-2 h5 {
   .features-container {
     flex-direction: column;
   }
-  .footer-container {
-    flex-direction: column;
-  }
-  .boost-background-mobile {
-    display: flex;
-  }
-  .shorten-link-background-mobile {
-    display: flex;
-    background-size: 73%;
-  }
-  .shortened-link-container {
-    width: 75vw;
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    flex-direction: column;
-  }
-  .shortened-link-container p {
-    margin: 0rem 0rem 0rem 0rem;
-  }
-  .shortened-link-container .shortened-left {
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-  }
-  .shortened-link-container .shortened-right {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-  }
-  .shortened-link-container .shortened-right p {
-    margin: 0rem 0rem 0rem 0rem;
-  }
-  .shortened-link-container .shortened-right button {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
   .features-container {
     margin-top: 4rem;
     padding-left: 0rem;
@@ -843,13 +845,19 @@ footer #footer-column-2 h5 {
     width: 325px;
     height: 285px;
   }
+  #feature-2 h3 {
+    margin-top: 5rem;
+  }
   #feature-3 {
     width: 325px;
     height: 270px;
     margin-top: 5.5rem;
   }
-  .section-2 {
-    padding-bottom: 5.2rem;
+  #feature-3 h3 {
+    margin-top: 5rem;
+  }
+  .boost-background-mobile {
+    display: flex;
   }
   .boost-area {
     padding-top: 5.6rem;
@@ -859,10 +867,13 @@ footer #footer-column-2 h5 {
   .boost-area h2 {
     font-size: 1.7rem;
     padding-right: 0rem;
+    padding-top: 0.5rem;
   }
-  .boost-area button {
-    padding: 1rem 4rem;
-    margin-top: 0;
+  .boost-area .get-started-button {
+    margin-top: 0rem;
+  }
+  footer .footer-container {
+    flex-direction: column;
   }
   footer .footer-container .image-container img {
     margin: 3.5rem auto 0rem auto;
@@ -880,9 +891,11 @@ footer #footer-column-2 h5 {
   }
   footer .footer-column ul {
     text-align: center;
+    font-size: 0.9rem;
   }
   footer .social-icons {
     width: 45%;
+    margin-top: 1rem;
   }
   footer #footer-column-1 h5 {
     margin-top: 3rem;

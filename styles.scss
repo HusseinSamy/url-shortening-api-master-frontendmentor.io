@@ -1,3 +1,6 @@
+////////////////////////////////
+// ALL COLORS 
+////////////////////////////////
 $main-color: #2bd1d1;
 $main-color-hover: #9be3e2;
 $gray: #959398;
@@ -8,7 +11,6 @@ $sec-black: #232027;
 $red: hsl(0, 87%, 67%);
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
-
 
 ////////////////////////////////
 // Global styles
@@ -62,7 +64,6 @@ path:hover {
 input {
     text-align: start;
     padding: 1.3rem 1.8rem;
-    // padding-left: 2.1rem;
     width: 95%;
     font-weight: 300;
     font-size: 1.25rem;
@@ -133,8 +134,10 @@ h5 {
     width: 90%;
     z-index: 10;
     margin-top: 27rem;
+
     ul {
         width: 100%;
+
         li {
             font-weight: 600;
             color: white;
@@ -172,6 +175,13 @@ h5 {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     ul {
         display: flex;
         justify-content: space-between;
@@ -232,7 +242,6 @@ h5 {
 
         h1 {
             margin-top: 1.4rem;
-            // margin-left: 1rem;
             margin-bottom: 0.1rem;
             font-weight: 700;
             font-size: 4.8rem;
@@ -247,7 +256,6 @@ h5 {
             line-height: 2.1rem;
             letter-spacing: 0.6px;
             font-weight: 500;
-            // margin-left: 1rem;
             color: $gray;
         }
     }
@@ -262,7 +270,6 @@ h5 {
         background-color: #2bd1d1;
         padding: 0.9rem 2.5rem;
         letter-spacing: 0.2px;
-        // margin-left: 1rem;
         border: 0;
         border-radius: 30px;
         color: white;
@@ -281,7 +288,6 @@ h5 {
 
 .shorten-link-container {
     margin-top: 3.7rem;
-    // margin-left: 1.4rem;
     z-index: 9;
     width: 100%;
     padding: 2rem 0rem;
@@ -374,7 +380,7 @@ h5 {
 ////////////////////////////////
 // Shortened links styles
 ////////////////////////////////
-/// 
+
 // First link margin on the top
 #section-2>.shortened-link-container {
     margin-top: 1.5rem;
@@ -428,7 +434,6 @@ h5 {
         background-color: $main-color;
         padding: .5rem 0rem;
         width: 6.5rem;
-        // margin-bottom:2rem;
         border: 0;
     }
 }
@@ -522,7 +527,6 @@ h5 {
     flex-direction: column;
     text-align: center;
     margin-top: -2rem;
-
     width: 350px;
     gap: .6rem;
 
@@ -538,7 +542,6 @@ h5 {
         position: absolute;
         top: -3rem;
         left: 2rem;
-
     }
 
     h3 {
@@ -749,6 +752,24 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ////////////////////////////////
 ////////////////////////////////
 // RESPONSIVE
@@ -756,16 +777,19 @@ footer {
 ////////////////////////////////
 
 @media only screen and (max-width: 1120px) {
-////////////////////////////////
-// Global styles
-////////////////////////////////
 
+    ////////////////////////////////
+    // Global styles
+    ////////////////////////////////
     h1,
     h4,
     h5 {
         padding: 0;
         margin: 0;
     }
+
+
+
     ////////////////////////////////
     // NAVIGATION BAR STYLES
     ////////////////////////////////
@@ -856,7 +880,9 @@ footer {
             }
         }
     }
-    
+
+
+
     ////////////////////////////////
     // FEATURES SECTION 
     ////////////////////////////////
@@ -868,6 +894,50 @@ footer {
         padding: 1.6rem 1.5rem;
         margin: 5.5rem 4rem 0rem 4rem;
         width: 75vw;
+    }
+
+    .shorten-link-background-mobile {
+        display: flex;
+        background-size: 73%;
+    }
+
+    .shortened-link-container {
+        width: 75vw;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        flex-direction: column;
+
+        p {
+            margin: 0rem 0rem 0rem 0rem;
+        }
+
+        .shortened-left {
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+        }
+
+        .shortened-right {
+            p {
+                margin: 0rem 0rem 0rem 0rem;
+            }
+
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+
+            button {
+                font-size: 1rem;
+                margin-top: .5rem;
+            }
+        }
+    }
+
+
+    .section-2 {
+        padding-bottom: 5.2rem;
     }
 
     .elements-parent {
@@ -929,54 +999,6 @@ footer {
         flex-direction: column;
     }
 
-    .footer-container {
-        flex-direction: column;
-
-    }
-
-    .boost-background-mobile {
-        display: flex;
-    }
-
-    .shorten-link-background-mobile {
-        display: flex;
-        background-size: 73%;
-    }
-
-    .shortened-link-container {
-        width: 75vw;
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
-        flex-direction: column;
-
-        p {
-            margin: 0rem 0rem 0rem 0rem;
-        }
-
-        .shortened-left {
-            justify-content: center;
-            width: 100%;
-            padding: 0;
-        }
-
-        .shortened-right {
-            p {
-                margin: 0rem 0rem 0rem 0rem;
-            }
-
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            padding: 0;
-
-            button {
-                font-size: 1rem;
-                margin-top: .5rem;
-            }
-        }
-    }
-
     .features-container {
         margin-top: 4rem;
         padding-left: 0rem;
@@ -989,7 +1011,6 @@ footer {
         h3 {
             margin-top: 4rem;
             padding: 0;
-            // padding-right: 1rem;
         }
 
         h5 {
@@ -1021,6 +1042,10 @@ footer {
         margin-top: 5.6rem;
         width: 325px;
         height: 285px;
+
+        h3 {
+            margin-top: 5rem;
+        }
     }
 
     #feature-3 {
@@ -1028,13 +1053,20 @@ footer {
         height: 270px;
         margin-top: 5.5rem;
 
+        h3 {
+            margin-top: 5rem;
+        }
     }
 
-    .section-2 {
-        padding-bottom: 5.2rem;
+
+
+    ////////////////////////////////
+    // BOOST AREA SECTION 
+    ////////////////////////////////
+    .boost-background-mobile {
+        display: flex;
     }
 
-    // BOOST SECTION
     .boost-area {
         padding-top: 5.6rem;
         padding-bottom: 5.6rem;
@@ -1043,27 +1075,29 @@ footer {
         h2 {
             font-size: 1.7rem;
             padding-right: 0rem;
+            padding-top: .5rem;
         }
 
-        button {
-            padding: 1rem 4rem;
-            // margin-left: 3rem;
-            margin-top: 0;
+        .get-started-button {
+            margin-top: 0rem;
         }
     }
 
-    // FOOTER
+    ////////////////////////////////
+    // FOOTER 
+    ////////////////////////////////
     footer {
+        .footer-container {
+            flex-direction: column;
+
+        }
 
         .footer-container .image-container img {
             margin: 3.5rem auto 0rem auto;
-            // margin-top: 3.5rem;
-            // margin-left: 1.5rem;
             display: flex;
             width: 7.5rem;
             justify-content: center;
             align-items: center;
-
         }
 
         .footer-column {
@@ -1076,11 +1110,13 @@ footer {
 
             ul {
                 text-align: center;
+                font-size: .9rem;
             }
         }
 
         .social-icons {
             width: 45%;
+            margin-top: 1rem;
         }
 
         #footer-column-1 {
@@ -1103,6 +1139,9 @@ footer {
 
     }
 
+    ////////////////////////////////
+    // ATTRIBUTON AREA 
+    ////////////////////////////////
     .attribution {
         flex-direction: column;
     }
