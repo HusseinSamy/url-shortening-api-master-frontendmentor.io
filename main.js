@@ -39,14 +39,20 @@
 ////////////////////////////////
 // Shrtco api integration
 ////////////////////////////////
+    // Global shortened links
+    const shotenedLinks = getFromLocalStorage() || [];
+    // Append components from local storage
+    appendFromLocalstorage();
     const shortenButton = document.getElementById("shorten-button")
+    // Calls shortening link API
     shortenButton.addEventListener("click", async (event) => {
         const linkToShorten = document.getElementById("link-to-shorten").value;
-        // Calls shortening link API
         try {
             const result = await callShortenAPI(linkToShorten);
             // Add new component after shortening
             appendNewLinkComponent(linkToShorten, result.data.result.short_link, result.data.result.code);
+            // Store value to local storage
+            storeToLocalStorage(linkToShorten, result.data.result.short_link, result.data.result.code);
         }
         catch (err) {
             alert(err)
@@ -55,16 +61,42 @@
 
 
 
-///////////////// Helper functions /////////////////
 
+
+
+///////////////// Helper functions /////////////////
+        // Store all links to local storage 
+        function storeToLocalStorage(link, shortened, code) {
+            shotenedLinks.push({link, shortened, code})
+            localStorage.setItem('links', JSON.stringify(shotenedLinks))
+        }
+
+        // Get all links from local storage 
+        function getFromLocalStorage() {
+            const links = localStorage.getItem('links');    
+            return JSON.parse(links);
+        }
+
+        // Append all links from local storage 
+        function appendFromLocalstorage(){
+            const links = getFromLocalStorage();
+            console.log(links);
+            if (links) {
+                
+                for (let el of links) {
+                    console.log(el);
+                    appendNewLinkComponent(el.link, el.shortened, el.code)
+                }
+            }
+}
+        
         // Appends new component for the resulting link
         function appendNewLinkComponent(originalLink, shortenedLink, id) {
             const linksParent = document.getElementById("section-2");
-
             const linkContainer = document.createElement('div');
             linkContainer.classList.add('shortened-link-container')
             
-        // Creates the left part of the component
+            // Creates the left part of the component
             const leftLinkEl = document.createElement('div');
             leftLinkEl.classList.add('shortened-left')
             const leftlinkContentEl = document.createElement('p');
@@ -72,7 +104,7 @@
             leftLinkEl.appendChild(leftlinkContentEl);
             linkContainer.appendChild(leftLinkEl)
 
-        // Creates the rigth part of the component
+            // Creates the rigth part of the component
             const rightLinkEl = document.createElement('div');
             rightLinkEl.classList.add('shortened-right')
             const rightlinkContentParent = document.createElement('div');
@@ -87,8 +119,12 @@
 
             rightLinkEl.appendChild(rightlinkContentParent);
             rightLinkEl.appendChild(rightlinkButtonParent);
+
+            // Assemble left and right parts together
             linkContainer.appendChild(rightLinkEl)
             linksParent.appendChild(linkContainer)
+
+            // Adds a copy functionallity to the copy buttons
             addCallBackToCopyButton(id, `https://${shortenedLink}`)
         }
 
@@ -123,11 +159,13 @@
 ////////////////////////////////
 
 
+
 ////////////////////////////////
 // Input validation dynamic styling
 ////////////////////////////////
-
-    let inputClickCounter = 0;
+    // Counter to know if the input is touched or not
+let inputClickCounter = 0;
+    
     const inputField = document.getElementById("link-to-shorten")
     const validationError = document.getElementById("validation-error")
     // Counts numbers of clicks on the input
@@ -158,3 +196,5 @@
     })
 ////////////////////////////////
 ////////////////////////////////
+
+
