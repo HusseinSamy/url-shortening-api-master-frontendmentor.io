@@ -20,3 +20,7 @@ This is my first challenge on [Frontendmentor.io](https://www.frontendmentor.io/
 [This](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?pli=1) extension really helped me in creating a 99% percent accurate design.
 
 Feel free to clone the project and take a look on the source code, and I am open for any discussion/reviews on it!🚀
+
+## Live link
+
+[Shortly live link](https://husseinsamy.github.io/url-shortening-api-master-frontendmentor.io/)
