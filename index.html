@@ -5,34 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
+  <!-- GENERIC META TAGS -->
+  <meta name="title" content="Shortly URL shortening service">
+  <meta name="description" content="Shortly is a website meant to provide a url shortening service using shortco API">
+  <meta name="keywords" content="URL Shortening, Shortening Website, API">
 
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <!-- OPEN GRAPH META TAGS -->
+  <meta name="og:type" content="website">
+  <meta name="og:url" content="https://husseinsamy.github.io/url-shortening-api-master-frontendmentor.io/">
+  <meta name="og:title" content="Shortly URL shortening service">
+  <meta name="og:description" content="Shortly is a website meant to provide a url shortening service using shortco API">
+  <meta name="og:image" content="/favicon.ico">
+
+  <!-- TWITTER META TAGS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://husseinsamy.github.io/url-shortening-api-master-frontendmentor.io/">
+  <meta name="twitter:title" content="Shortly URL shortening service">
+  <meta name="twitter:description" content="Shortly is a website meant to provide a url shortening service using shortco API">
+  <meta name="twitter:image" itemprop="image" content="/favicon.ico">
+ 
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <title>Shortly – URL shortening service</title>
 
 </head>
 
 <body>
 
   <header>
-
     <div class="container">
+
+
       <nav class="nav-container">
         <div class="nav-left">
           <a href="#">
             <img id="logo" src="./assets/images/logo.svg" alt="Shortly Logo">
           </a>
           <ul>
-            <li>
-              Features
-            </li>
-            <li>
-              Pricing
-            </li>
-            <li>
-              Resources
-            </li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Resources</li>
           </ul>
           <img id="burger-menu"
             src="./assets/images/menu-burger-horizontal-svgrepo-com.svg"
@@ -49,39 +63,47 @@
           </button>
         </div>
       </nav>
+
+      <!-- =========== -->
+      <!-- MOBILE VIEW -->
+      <!-- =========== -->
       <div class="menu-container" id="main-menu">
         <ul>
-          <li>
-            Features
-          </li>
-          <li>
-            Pricing
-          </li>
-          <li>
-            Resources
-          </li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Resources</li>
           <hr style="width: 80%; opacity: 10%;">
-          <li>
-            Login
-          </li>
+          <li>Login</li>
         </ul>
 
         <button>Sign Up</button>
       </div>
+
+
     </div>
   </header>
 
+
+
   <main>
 
+    <!-- ========= -->
+    <!-- SECTION 1 -->
+    <!-- ========= -->
     <section class="hero-area-section">
+
+
       <div class="container">
+
         <div class="hero-area-container">
+
+
           <div class="text-container">
             <h1>More than just shorter links</h1>
-            <h4>Build your brand’s recognition and get detailed insights on how
+            <p>Build your brand’s recognition and get detailed insights on how
               your
               links are performing.
-            </h4>
+            </p>
             <div class="button-wrapper">
               <button>Get Started</button>
             </div>
@@ -90,134 +112,142 @@
             <img src="./assets/images/illustration-working.svg"
               alt="Main Illustration">
           </div>
+
+          
         </div>
+
       </div>
+
+
     </section>
 
 
 
 
 
-
+    <!-- ========= -->
+    <!-- SECTION 2 -->
+    <!-- ========= -->
     <section class="section-2">
+
       <div class="white-rectangle"></div>
-      <div class="container" id="section-2">
-        <div class="shorten-link-container shorten-link-background"
-          id="shorten-link-container">
-          <div class="elements-parent">
-            <span>
-              <input type="text" placeholder="Shorten a link here..."
-                id="link-to-shorten">
-              <i id="validation-error">Please add a link</i>
-            </span>
-            <button id="shorten-button"> Shorten It!</button>
 
+        <div class="container" id="section-2">
+          <div class="shorten-link-container shorten-link-background"
+            id="shorten-link-container">
+            <div class="elements-parent">
+
+              <span>
+                <input type="text" placeholder="Shorten a link here..."
+                  id="link-to-shorten">
+                <i id="validation-error">Please add a link</i>
+              </span>
+
+
+              <button id="shorten-button"> Shorten It!</button>
+              
+            </div>
           </div>
         </div>
-      </div>
 
+        <div class="features-section">
 
+          <h2>Advanced Statistics</h2>
 
+          <p>
+            Track how your links are performing across the web with our advanced statistics dashboard.
+          </p>
 
-      <div class="features-section">
-        <h2>Advanced Statistics</h2>
-        <h4>
-          Track
-          how your links are
-          performing across the web with our
-          advanced statistics dashboard.
-        </h4>
+          <div class="main-line-container">
 
-
-
-        <div class="main-line-container">
-          <div class="main-line-wrapper">
-            <div class="main-line">
+            <div class="main-line-wrapper">
+              <div class="main-line"></div>
             </div>
-          </div>
 
-          <div class="features-container">
 
-            <div class="feature-container" id="feature-1">
-              <div class="feature-wrapper">
-                <div class="img-container">
-                  <img src="./assets/images/icon-brand-recognition.svg"
-                    alt="Brand Recognition Icon">
+            <div class="features-container">
+
+              <div class="feature-container" id="feature-1">
+                <div class="feature-wrapper">
+
+                  <div class="img-container">
+                    <img src="./assets/images/icon-brand-recognition.svg"
+                      alt="Brand Recognition Icon">
+                  </div>
+
+
+                  <h3>Brand Recognition</h3>
+
+
+                  <p>
+                    Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+                  </p>
+
                 </div>
-                <h3>Brand
-                  Recognition
-                </h3>
-                <h5>
-                  Boost
-                  your
-                  brand
-                  recognition with each click.
-                  Generic
-                  links don’t
-                  mean a thing. Branded links help instil confidence in your
-                  content.
-                  </h4>
               </div>
-            </div>
 
 
-            <div class="feature-container" id="feature-2">
-              <div class="feature-wrapper">
-                <div class="img-container">
-                  <img src="./assets/images/icon-detailed-records.svg"
-                    alt="Brand Recognition Icon">
+              <div class="feature-container" id="feature-2">
+                <div class="feature-wrapper">
+
+                  <div class="img-container">
+                    <img src="./assets/images/icon-detailed-records.svg"
+                      alt="Brand Recognition Icon">
+                  </div>
+
+
+                  <h3>Detailed Records</h3>
+
+
+                  <p>
+                    Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+                  </p>
                 </div>
-                <h3>
-                  Detailed Records
-                </h3>
-                <h5>
-                  Gain insights into who is clicking your links. Knowing when
-                  and
-                  where
-                  people engage with your content helps inform better decisions.
-                  </h4>
               </div>
-            </div>
 
 
-            <div class="feature-container" id="feature-3">
-              <div class="feature-wrapper">
-                <div class="img-container">
-                  <img src="./assets/images/icon-fully-customizable.svg"
-                    alt="Brand Recognition Icon">
+              <div class="feature-container" id="feature-3">
+                <div class="feature-wrapper">
+
+
+                  <div class="img-container">
+                    <img src="./assets/images/icon-fully-customizable.svg"
+                      alt="Brand Recognition Icon">
+                  </div>
+
+
+                  <h3>Fully Customizable</h3>
+
+
+                  <p>
+                    Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+                  </p>
+
+
                 </div>
-                <h3>
-                  Fully Customizable
-                </h3>
-                <h5>
-                  Improve brand awareness and content discoverability through
-                  customizable
-                  links, supercharging audience engagement.
-                  </h4>
               </div>
             </div>
           </div>
-
-
         </div>
-      </div>
-
     </section>
 
 
 
 
 
+    <!-- ========= -->
+    <!-- SECTION 3 -->
+    <!-- ========= -->
     <section>
 
       <div class="boost-area boost-background" id="boost-area-container">
-        <h2>Boost your links today</h3>
-          <button class="get-started-button">
-            Get
-            Started
-          </button>
+        
+        <h2>Boost your links today</h2>
+
+        <button class="get-started-button"> Get Started</button>
 
       </div>
+
     </section>
   </main>
 
@@ -234,57 +264,33 @@
 
 
         <div class="footer-column" id="footer-column-1">
-          <h5>
+          <span>
             Features
-          </h5>
+          </span>
           <ul>
-            <li>
-              Link Shortening
-            </li>
-            <li>
-              Branded Links
-            </li>
-            <li>
-              Analytics
-            </li>
+            <li>Link Shortening</li>
+            <li>Branded Links</li>
+            <li>Analytics</li>
           </ul>
         </div>
 
         <div class="footer-column" id="footer-column-2">
-          <h5>
-            Resources
-          </h5>
+          <span>Resources</span>
           <ul>
-            <li>
-              Blog
-            </li>
-            <li>
-              Developers
-            </li>
-            <li>
-              Support
-            </li>
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
           </ul>
         </div>
 
 
         <div class="footer-column" id="footer-column-3">
-          <h5>
-            Company
-          </h5>
+          <span>Company</span>
           <ul>
-            <li>
-              About
-            </li>
-            <li>
-              Our Team
-            </li>
-            <li>
-              Careers
-            </li>
-            <li>
-              Contact
-            </li>
+            <li>About</li>
+            <li>Our Team</li>
+            <li>Careers</li>
+            <li>Contact</li>
           </ul>
         </div>
         <div class="social-icons">
