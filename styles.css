@@ -628,14 +628,14 @@ footer #footer-column-2 span {
   padding-bottom: 2rem;
   color: #ffffff;
 }
-.attribution h4 {
+.attribution span {
   font-weight: 400;
-  margin: 0;
 }
-.attribution h4 a {
+.attribution span a {
   font-weight: 600;
   text-decoration: none;
   color: #ffffff;
+  margin-left: 0.3rem;
 }
 .attribution a:hover {
   color: #2bd1d1;
